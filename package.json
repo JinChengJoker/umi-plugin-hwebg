@@ -1,5 +1,6 @@
 {
   "name": "umi-plugin-hwebg",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "description": "generate basic CURD page",
   "authors": {
@@ -56,5 +57,8 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "dependencies": {
+    "hwebg": "^0.3.1"
+  }
 }
