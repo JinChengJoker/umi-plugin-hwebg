@@ -9,8 +9,16 @@ export default function(api: IApi) {
     config: {
       schema(joi) {
         const itemSchema = joi.object({
+          requestLibPath: joi.string(),
           schemaPath: joi.string(),
+          mock: joi.boolean(),
           projectName: joi.string(),
+          apiPrefix: joi.alternatives(joi.string(), joi.function()),
+          namespace: joi.string(),
+          hook: joi.object({
+            customFunctionName: joi.function(),
+            customClassName: joi.function(),
+          }),
         });
         return joi.alternatives(joi.array().items(itemSchema), itemSchema);
       },
