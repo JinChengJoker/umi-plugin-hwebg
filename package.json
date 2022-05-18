@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-hwebg",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "用于生成 CURD 页面和路由配置的 umi 插件",
   "repository": {
     "type": "git",
@@ -60,7 +60,7 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
-    "hwebg": "^0.4.1"
+    "hwebg": "^0.4.2"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

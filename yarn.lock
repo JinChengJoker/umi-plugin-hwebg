@@ -7988,10 +7988,10 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-hwebg@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/hwebg/-/hwebg-0.4.1.tgz#30194d768947ab5f4b96cc86425775d2e576b503"
-  integrity sha512-v6qbdbpWRnaLpMhWlmW71u69s9vwyCVX92/T0Ecv2U2V3nQcDop5qdedOgDrh+oJt8aWg3zgwXQiiVyd2C5Odg==
+hwebg@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.npmjs.org/hwebg/-/hwebg-0.4.2.tgz#561cb8f0087c5bccb9342c229cb2be7765222ffb"
+  integrity sha512-wy8GjeFfgJ1AtJMTSUit1OQDpLsWlhXEIl8COdw8WY7qOdQVvDkQX6stqmmQ3HcKGm3ZgtKRvO3myyGgvnarLQ==
   dependencies:
     "@umijs/fabric" "^2.10.2"
     nunjucks "^3.2.3"
