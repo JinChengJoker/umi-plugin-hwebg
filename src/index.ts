@@ -42,7 +42,7 @@ export default function(api: IApi) {
     name: 'hwebr',
     fn: async () => {
       const openAPIConfig = api.config.openAPI;
-      const publicPath = api.config.publicPath || '';
+      const publicPath = api.config.publicPath || '/';
       if (Array.isArray(openAPIConfig)) {
         generateRoutes(openAPIConfig, publicPath);
         return;
