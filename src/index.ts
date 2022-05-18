@@ -1,7 +1,7 @@
 // ref:
 // - https://umijs.org/plugins/api
 import { IApi } from '@umijs/types';
-import { traverseOpenApiList } from 'hwebg';
+import { generatePages, generateRoutes } from 'hwebg';
 
 export default function(api: IApi) {
   api.describe({
@@ -31,10 +31,23 @@ export default function(api: IApi) {
     fn: async () => {
       const openAPIConfig = api.config.openAPI;
       if (Array.isArray(openAPIConfig)) {
-        traverseOpenApiList(openAPIConfig);
+        generatePages(openAPIConfig);
         return;
       }
-      traverseOpenApiList([openAPIConfig]);
+      generatePages([openAPIConfig]);
+    },
+  });
+
+  api.registerCommand({
+    name: 'hwebr',
+    fn: async () => {
+      const openAPIConfig = api.config.openAPI;
+      const publicPath = api.config.publicPath || '';
+      if (Array.isArray(openAPIConfig)) {
+        generateRoutes(openAPIConfig, publicPath);
+        return;
+      }
+      generateRoutes([openAPIConfig], publicPath);
     },
   });
 }

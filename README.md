@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/umi-plugin-hwebg.svg?style=flat)](https://npmjs.org/package/umi-plugin-hwebg) [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-hwebg.svg?style=flat)](https://npmjs.org/package/umi-plugin-hwebg)
 
-generate basic CURD page
+用于生成 CURD 页面和路由配置的 umi 插件。
 
 ## 说明
 
@@ -13,7 +13,7 @@ generate basic CURD page
 ### 安装依赖
 
 ```bash
-$ tyarn install
+$ yarn install
 ```
 
 ### 打包编译

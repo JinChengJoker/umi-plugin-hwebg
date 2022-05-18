@@ -1,13 +1,20 @@
 {
   "name": "umi-plugin-hwebg",
-  "version": "0.1.1",
-  "main": "lib/index.js",
-  "description": "generate basic CURD page",
+  "version": "0.2.0",
+  "description": "用于生成 CURD 页面和路由配置的 umi 插件",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:JinChengJoker/umi-plugin-hwebg.git"
+  },
   "authors": {
     "name": "Jin Cheng",
     "email": "jinchengjoker@foxmail.com"
   },
-  "repository": "/umi-plugin-hwebg",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
   "scripts": {
     "start": "cross-env APP_ROOT=example umi dev",
     "build": "father-build",
@@ -52,13 +59,10 @@
     "umi": "^3.1.0",
     "yorkie": "^2.0.0"
   },
+  "dependencies": {
+    "hwebg": "^0.4.0"
+  },
   "gitHooks": {
     "pre-commit": "lint-staged"
-  },
-  "files": [
-    "lib"
-  ],
-  "dependencies": {
-    "hwebg": "^0.3.1"
   }
 }
