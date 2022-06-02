@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-hwebg",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "用于生成 CURD 页面和路由配置的 umi 插件",
   "repository": {
     "type": "git",
